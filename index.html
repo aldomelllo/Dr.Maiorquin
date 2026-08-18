@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Maiorquin 10555 | Deputado Estadual - Rondônia</title>
+    <!-- Fontes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        /* ==========================================================================
+           1. VARIÁVEIS E PALETA DE CORES (PANTONE DA CAMPANHA)
+           ========================================================================== */
+        :root {
+            --primary-blue: #0254A5;
+            --primary-blue-dark: #013D7A;
+            --primary-blue-light: #EBF3FA;
+            --accent-green: #009845;
+            --accent-green-dark: #007535;
+            --accent-yellow: #FBB800;
+            --accent-yellow-hover: #E0A400;
+            
+            --bg-light: #F8FAFC;
+            --bg-white: #FFFFFF;
+            --bg-subtle: #F1F5F9;
+            
+            --text-main: #1E293B;
+            --text-muted: #475569;
+            --text-light: #64748B;
+            
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 12px rgba(2, 84, 165, 0.08);
+            --shadow-lg: 0 10px 25px rgba(2, 84, 165, 0.12);
+            --border-radius: 16px;
+            --transition: all 0.3s ease;
+        }
+
+        /* ==========================================================================
+           2. RESET E ESTILOS GERAIS
+           ========================================================================== */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text-main);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: var(--primary-blue-dark);
+            line-height: 1.25;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .section-padding {
+            padding: 90px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 760px;
+            margin: 0 auto 50px auto;
+        }
+
+        .section-subtitle {
+            display: inline-block;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.875rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--accent-green);
+            background-color: rgba(0, 152, 69, 0.08);
+            padding: 6px 16px;
+            border-radius: 50px;
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: 2.25rem;
+            color: var(--primary-blue-dark);
+            margin-bottom: 16px;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+        }
+
+        /* Frase de Destaque Global */
+        .highlight-quote {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
+            color: #FFFFFF;
+            padding: 40px;
+            border-radius: var(--border-radius);
+            text-align: center;
+            margin: 40px 0;
+            position: relative;
+            box-shadow: var(--shadow-lg);
+            border-left: 6px solid var(--accent-yellow);
+        }
+
+        .highlight-quote p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        /* Botões */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 1rem;
+            padding: 14px 32px;
+            border-radius: 50px;
+            cursor: pointer;
+            border: none;
+            transition: var(--transition);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-yellow {
+            background-color: var(--accent-yellow);
+            color: var(--primary-blue-dark);
+            box-shadow: 0 4px 15px rgba(251, 184, 0, 0.35);
+        }
+
+        .btn-yellow:hover {
+            background-color: var(--accent-yellow-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(251, 184, 0, 0.45);
+        }
+
+        .btn-green {
+            background-color: var(--accent-green);
+            color: #FFFFFF;
+            box-shadow: 0 4px 15px rgba(0, 152, 69, 0.3);
+        }
+
+        .btn-green:hover {
+            background-color: var(--accent-green-dark);
+            transform: translateY(-2px);
+        }
+
+        /* ==========================================================================
+           3. BANNER ELEITORAL DE TOPO (LEGISLAÇÃO TSE)
+           ========================================================================== */
+        .legal-top-bar {
+            background-color: var(--primary-blue-dark);
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 0.78rem;
+            padding: 6px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .legal-top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .legal-badge {
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: var(--accent-yellow);
+        }
+
+        /* ==========================================================================
+           4. MENU SUPERIOR / NAV
+           ========================================================================== */
+        .navbar {
+            background-color: var(--bg-white);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow-sm);
+            padding: 12px 0;
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .nav-logo-img {
+            height: 48px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 24px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.875rem;
+            font-weight: 700;
+            color: var(--text-main);
+            text-transform: uppercase;
+            padding: 6px 0;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            background-color: var(--accent-green);
+            transition: var(--transition);
+            border-radius: 2px;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-blue);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-badge-right {
+            background: linear-gradient(135deg, var(--accent-yellow) 0%, #E5A500 100%);
+            padding: 8px 18px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .nav-badge-right span {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 1.05rem;
+            color: var(--primary-blue-dark);
+            line-height: 1;
+        }
+
+        /* Mobile Menu Toggle */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary-blue-dark);
+            cursor: pointer;
+        }
+
+        /* ==========================================================================
+           5. HERO SECTION (PRIMEIRA DOBRA)
+           ========================================================================== */
+        .hero-section {
+            background: linear-gradient(135deg, #013D7A 0%, #0254A5 50%, #00366D 100%);
+            color: #FFFFFF;
+            padding: 60px 0 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            background: radial-gradient(circle at 80% 20%, rgba(0, 152, 69, 0.15) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-banner-wrapper {
+            margin-bottom: 40px;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hero-banner-img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .hero-badge-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: var(--accent-green);
+            color: #FFFFFF;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 0.9rem;
+            padding: 8px 18px;
+            border-radius: 50px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            color: #FFFFFF;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 16px;
+        }
+
+        .hero-number-highlight {
+            color: var(--accent-yellow);
+            font-size: 3.5rem;
+            display: inline-block;
+        }
+
+        .hero-slogan {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-yellow);
+            margin-bottom: 16px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .hero-description {
+            font-size: 1.15rem;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 30px;
+            max-width: 620px;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .hero-circle-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            padding: 24px;
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            text-align: center;
+        }
+
+        .hero-circle-img {
+            width: 260px;
+            height: 260px;
+            margin: 0 auto 16px auto;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent-yellow);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        /* ==========================================================================
+           6. SEÇÃO 2: APRESENTAÇÃO
+           ========================================================================== */
+        .apresentacao-section {
+            background-color: var(--bg-white);
+        }
+
+        .apresentacao-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .apresentacao-img-box {
+            position: relative;
+        }
+
+        .apresentacao-img {
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-lg);
+            width: 100%;
+        }
+
+        .apresentacao-text-content p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 18px;
+            line-height: 1.7;
+        }
+
+        .quote-box-simple {
+            background-color: var(--primary-blue-light);
+            border-left: 5px solid var(--primary-blue);
+            padding: 20px 24px;
+            border-radius: 0 12px 12px 0;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.15rem;
+            color: var(--primary-blue-dark);
+            margin-top: 24px;
+        }
+
+        /* ==========================================================================
+           7. SEÇÃO 3: POSICIONAMENTO
+           ========================================================================== */
+        .posicionamento-section {
+            background-color: var(--bg-light);
+        }
+
+        .posicionamento-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-bottom: 30px;
+        }
+
+        .pos-card {
+            background: var(--bg-white);
+            padding: 32px 24px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-md);
+            border-top: 4px solid var(--primary-blue);
+            transition: var(--transition);
+        }
+
+        .pos-card:hover {
+            transform: translateY(-50px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .pos-icon {
+            width: 60px;
+            height: 60px;
+            background-color: var(--primary-blue-light);
+            color: var(--primary-blue);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+        }
+
+        .pos-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+            color: var(--primary-blue-dark);
+        }
+
+        .pos-card p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        /* ==========================================================================
+           8. SEÇÃO 4: PRINCIPAIS BANDEIRAS
+           ========================================================================== */
+        .bandeiras-section {
+            background-color: var(--bg-white);
+        }
+
+        .bandeiras-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .bandeira-card {
+            background-color: var(--bg-light);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            border-radius: var(--border-radius);
+            padding: 32px 24px;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bandeira-card::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 4px;
+            background: linear-gradient(90deg, var(--accent-green) 0%, var(--primary-blue) 100%);
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .bandeira-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            background-color: var(--bg-white);
+        }
+
+        .bandeira-card:hover::after {
+            opacity: 1;
+        }
+
+        .bandeira-icon-circle {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background-color: var(--primary-blue-light);
+            color: var(--primary-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            margin-bottom: 20px;
+        }
+
+        .bandeira-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .bandeira-card p {
+            font-size: 0.98rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* ==========================================================================
+           9. SEÇÃO 5: TRAJETÓRIA / AUTORIDADE
+           ========================================================================== */
+        .trajetoria-section {
+            background-color: var(--bg-light);
+        }
+
+        .trajetoria-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        .trajetoria-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .trajetoria-item {
+            background: var(--bg-white);
+            padding: 16px 20px;
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            border-left: 4px solid var(--accent-green);
+        }
+
+        .trajetoria-item i {
+            color: var(--accent-green);
+            font-size: 1.25rem;
+            width: 24px;
+            text-align: center;
+        }
+
+        .trajetoria-item span {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: var(--text-main);
+            font-size: 1.05rem;
+        }
+
+        /* ==========================================================================
+           10. SEÇÃO 6: RESULTADOS / LEGADO (LINHA DO TEMPO / CARDS)
+           ========================================================================== */
+        .resultados-section {
+            background-color: var(--bg-white);
+        }
+
+        .resultados-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .resultado-card {
+            background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+            border: 1px solid #E2E8F0;
+            border-radius: var(--border-radius);
+            padding: 28px 24px;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .resultado-card:hover {
+            box-shadow: var(--shadow-md);
+            border-color: var(--primary-blue);
+        }
+
+        .resultado-tag {
+            font-size: 0.8rem;
+            font-weight: 800;
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-blue);
+            background-color: var(--primary-blue-light);
+            padding: 4px 12px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        .resultado-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .resultado-card p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        /* ==========================================================================
+           11. SEÇÃO 7: HUMANIZAÇÃO
+           ========================================================================== */
+        .humanizacao-section {
+            background-color: var(--bg-light);
+        }
+
+        .humanizacao-container {
+            background: var(--bg-white);
+            border-radius: var(--border-radius);
+            padding: 50px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .humanizacao-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .humanizacao-badge-box {
+            background-color: var(--primary-blue-light);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            text-align: center;
+            border: 2px dashed var(--primary-blue);
+        }
+
+        .humanizacao-badge-box i {
+            font-size: 3rem;
+            color: var(--primary-blue);
+            margin-bottom: 16px;
+        }
+
+        .humanizacao-badge-box h4 {
+            font-size: 1.3rem;
+            color: var(--primary-blue-dark);
+            margin-bottom: 8px;
+        }
+
+        .humanizacao-text p {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+
+        /* ==========================================================================
+           12. SEÇÃO 8: POR QUE DEPUTADO ESTADUAL?
+           ========================================================================== */
+        .porque-section {
+            background-color: var(--bg-white);
+        }
+
+        .porque-box {
+            background: linear-gradient(135deg, #F1F5F9 0%, #E2E8F0 100%);
+            border-radius: var(--border-radius);
+            padding: 50px;
+            border-left: 6px solid var(--accent-green);
+        }
+
+        .porque-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .porque-col h3 {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            color: var(--primary-blue-dark);
+        }
+
+        .porque-col p {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+
+        /* ==========================================================================
+           13. SEÇÃO 9: CHAMADA ELEITORAL & REDES SOCIAIS
+           ========================================================================== */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-blue-dark) 0%, var(--primary-blue) 100%);
+            color: #FFFFFF;
+            text-align: center;
+            padding: 80px 0;
+            position: relative;
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-title {
+            font-size: 2.5rem;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+        }
+
+        .cta-list {
+            list-style: none;
+            margin: 30px auto;
+            max-width: 600px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .cta-list li {
+            font-size: 1.15rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+
+        .cta-list li i {
+            color: var(--accent-yellow);
+            font-size: 1.25rem;
+        }
+
+        .cta-number-card {
+            background-color: var(--accent-yellow);
+            color: var(--primary-blue-dark);
+            padding: 24px 40px;
+            border-radius: var(--border-radius);
+            display: inline-block;
+            margin-top: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .cta-number-card .candidate-name {
+            font-size: 1.5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .cta-number-card .candidate-num {
+            font-size: 4rem;
+            font-weight: 900;
+            line-height: 1;
+            letter-spacing: 2px;
+        }
+
+        .cta-number-card .candidate-slogan {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-top: 6px;
+        }
+
+        /* Redes Sociais Section */
+        .social-section {
+            background-color: var(--bg-light);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .social-links-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .social-btn {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .social-btn.instagram {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: #FFFFFF;
+        }
+
+        .social-btn.facebook {
+            background-color: #1877F2;
+            color: #FFFFFF;
+        }
+
+        .social-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* ==========================================================================
+           14. SEÇÃO 11: RODAPÉ (FOOTER ELEITORAL COMPLETO)
+           ========================================================================== */
+        .footer {
+            background-color: #012952;
+            color: #FFFFFF;
+            padding: 60px 0 30px 0;
+            font-size: 0.9rem;
+            border-top: 4px solid var(--accent-yellow);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand h3 {
+            color: #FFFFFF;
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+        }
+
+        .footer-brand p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 20px;
+        }
+
+        .party-logo-footer {
+            height: 55px;
+            width: auto;
+            background-color: #FFFFFF;
+            padding: 8px 16px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        .footer-links h4, .footer-legal h4 {
+            color: var(--accent-yellow);
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+        }
+
+        .footer-nav {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-nav a {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .footer-nav a:hover {
+            color: var(--accent-yellow);
+        }
+
+        .cnpj-box {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 16px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .cnpj-box strong {
+            color: var(--accent-yellow);
+            display: block;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .cnpj-number {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 1.1rem;
+            color: #FFFFFF;
+            letter-spacing: 0.5px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 24px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.825rem;
+        }
+
+        /* ==========================================================================
+           15. RESPONSIVIDADE (MEDIA QUERIES)
+           ========================================================================== */
+        @media (max-width: 992px) {
+            .hero-grid,
+            .apresentacao-grid,
+            .trajetoria-grid,
+            .humanizacao-grid,
+            .porque-grid,
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .posicionamento-cards,
+            .bandeiras-grid,
+            .resultados-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero-title {
+                font-size: 2.4rem;
+            }
+
+            .nav-links {
+                display: none; /* Poderia virar menu hambúrguer */
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .posicionamento-cards,
+            .bandeiras-grid,
+            .resultados-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-title {
+                font-size: 1.9rem;
+            }
+
+            .hero-slogan {
+                font-size: 1.2rem;
+            }
+
+            .section-title {
+                font-size: 1.75rem;
+            }
+
+            .humanizacao-container, .porque-box {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==========================================================================
+         TOP BAR - REGULARIZAÇÃO ELEITORAL (CNPJ / PARTIDO)
+         ========================================================================== -->
+    <div class="legal-top-bar">
+        <div class="container">
+            <div>
+                <span class="legal-badge">ELEIÇÕES 2026</span>
+                CNPJ DA CAMPANHA: <strong>68.519.554/0001-33</strong>
+            </div>
+            <div>
+                PARTIDO: <strong>REPUBLICANOS (10)</strong> | DEPUTADO ESTADUAL <strong>10555</strong>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================================================
+         NAVBAR / MENU SUPERIOR
+         ========================================================================== -->
+    <header class="navbar">
+        <div class="container">
+            <a href="#inicio" class="nav-logo-container">
+                <!-- Usando a logo horizontal oficial com transparência/fundo claro -->
+                <img src="LOGO-DR.-MAIORQUIN-10555---HORIZONTAL-v.-branca.png" alt="Logo Dr. Maiorquin 10555" class="nav-logo-img">
+            </a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#apresentacao">Quem é Maiorquin</a></li>
+                    <li><a href="#bandeiras">Bandeiras</a></li>
+                    <li><a href="#trajetoria">Trajetória</a></li>
+                    <li><a href="#resultados">Resultados</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+          
+
+            <button class="mobile-menu-btn" aria-label="Abrir Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- ==========================================================================
+         1. HERO / PRIMEIRA DOBRA
+         ========================================================================== -->
+    <section id="inicio" class="hero-section">
+        <div class="container">
+            
+            <!-- Banner Head Oficial Integrado -->
+            <div class="hero-banner-wrapper">
+                <img src="head.png" alt="Campanha Dr. Maiorquin 10555 - Quem entende de saúde, cuida de pessoas" class="hero-banner-img">
+            </div>
+
+            <div class="hero-grid">
+                <div>
+                    <div class="hero-badge-tag">
+                        <i class="fa-solid fa-check-circle"></i> Deputado Estadual • Rondônia
+                    </div>
+                    <h1 class="hero-title">
+                        DR. MAIORQUIN <br>
+                        <span class="hero-number-highlight">10555</span>
+                    </h1>
+                    <div class="hero-slogan">
+                        "Quem entende de saúde, cuida de pessoas."
+                    </div>
+                    <p class="hero-description">
+                        Experiência, conhecimento e compromisso para ajudar a construir uma saúde mais eficiente, humana e próxima das pessoas em Rondônia.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#apresentacao" class="btn btn-yellow">
+                            <i class="fa-solid fa-user-doctor"></i> Conheça a História
+                        </a>
+                        <a href="#bandeiras" class="btn btn-green">
+                            <i class="fa-solid fa-clipboard-check"></i> Propostas e Bandeiras
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-circle-card">
+                    <img src="arte circular.png" alt="Dr. Maiorquin Arte Circular" class="hero-circle-img">
+                    <h3 style="color: #FFFFFF; font-size: 1.2rem; margin-bottom: 6px;">Experiência & Compromisso</h3>
+                    <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">Pronto para servir Rondônia na Assembleia Legislativa.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         2. APRESENTAÇÃO (QUEM É MAIORQUIN)
+         ========================================================================== -->
+    <section id="apresentacao" class="apresentacao-section section-padding">
+        <div class="container">
+            <div class="apresentacao-grid">
+                <div class="apresentacao-img-box">
+                    <img src="arte circular.png" alt="Dr. Maiorquin Médico e Gestor" class="apresentacao-img">
+                </div>
+
+                <div class="apresentacao-text-content">
+                    <span class="section-subtitle">Apresentação</span>
+                    <h2 class="section-title">Uma vida dedicada a cuidar de pessoas</h2>
+                    
+                    <p>
+                        Sou médico, professor e gestor. Ao longo da minha trajetória, conheci a saúde de diferentes formas: atendendo pacientes, trabalhando no interior, nos hospitais, formando novos profissionais e participando da gestão pública.
+                    </p>
+                    <p>
+                        Foi vivendo essa realidade que aprendi uma coisa muito importante: <strong>conhecimento só faz sentido quando é colocado a serviço das pessoas.</strong>
+                    </p>
+                    <p>
+                        Agora, quero levar essa experiência para a Assembleia Legislativa de Rondônia. Não para construir uma carreira política, mas para ampliar minha capacidade de servir.
+                    </p>
+
+                    <div class="quote-box-simple">
+                        "Não é sobre construir uma carreira política, é sobre ampliar a capacidade de servir nossa população."
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. POSICIONAMENTO
+         ========================================================================== -->
+    <section class="posicionamento-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Posicionamento</span>
+                <h2 class="section-title">Experiência para cuidar. Conhecimento para fiscalizar.</h2>
+                <p class="section-description">
+                    A saúde de Rondônia precisa de planejamento, gestão, fiscalização e responsabilidade.
+                </p>
+            </div>
+
+            <div class="posicionamento-cards">
+                <div class="pos-card">
+                    <div class="pos-icon">
+                        <i class="fa-solid fa-stethoscope"></i>
+                    </div>
+                    <h3>Conhecimento Prático</h3>
+                    <p>Quem conhece o sistema por dentro consegue identificar onde estão os gargalos e falhas reais do atendimento público.</p>
+                </div>
+
+                <div class="pos-card">
+                    <div class="pos-icon">
+                        <i class="fa-solid fa-magnifying-glass-dollar"></i>
+                    </div>
+                    <h3>Fiscalização Rígida</h3>
+                    <p>Acompanhar de perto a aplicação dos recursos públicos para garantir que o dinheiro se transforme em remédio e consulta.</p>
+                </div>
+
+                <div class="pos-card">
+                    <div class="pos-icon">
+                        <i class="fa-solid fa-hand-holding-medical"></i>
+                    </div>
+                    <h3>Soluções Reais</h3>
+                    <p>Construir políticas públicas viáveis que realmente cheguem à população que vive no interior e na capital.</p>
+                </div>
+            </div>
+
+            <!-- FRASE DE DESTAQUE 1 -->
+            <div class="highlight-quote">
+                <p>"A saúde pode funcionar melhor. Com gestão, fiscalização e compromisso."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. PRINCIPAIS BANDEIRAS
+         ========================================================================== -->
+    <section id="bandeiras" class="bandeiras-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Compromissos</span>
+                <h2 class="section-title">O que eu defendo para Rondônia</h2>
+                <p class="section-description">Propostas claras baseadas em problemas reais vivenciados no dia a dia da saúde.</p>
+            </div>
+
+            <div class="bandeiras-grid">
+                <!-- 1 -->
+                <div class="bandeira-card">
+                    <div class="bandeira-icon-circle">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3>Gestão e Eficiência</h3>
+                    <p>Recursos públicos precisam se transformar em atendimento, medicamentos, exames, estrutura e cuidado efetivo para as pessoas.</p>
+                </div>
+
+                <!-- 2 -->
+                <div class="bandeira-card">
+                    <div class="bandeira-icon-circle">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <h3>Fiscalização Qualificada</h3>
+                    <p>Fiscalizar com conhecimento técnico, responsabilidade e independência para acompanhar onde cada centavo do dinheiro público é aplicado.</p>
+                </div>
+
+                <!-- 3 -->
+                <div class="bandeira-card">
+                    <div class="bandeira-icon-circle">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <h3>Saúde Mais Perto das Pessoas</h3>
+                    <p>Fortalecer a regionalização para que quem vive no interior não precise percorrer centenas de quilômetros para conseguir consultas e exames.</p>
+                </div>
+
+                <!-- 4 -->
+                <div class="bandeira-card">
+                    <div class="bandeira-icon-circle">
+                        <i class="fa-solid fa-user-nurse"></i>
+                    </div>
+                    <h3>Valorização dos Profissionais</h3>
+                    <p>Não existe atendimento digno sem equipes de saúde respeitadas, estruturadas, capacitadas e devidamente valorizadas.</p>
+                </div>
+
+                <!-- 5 -->
+                <div class="bandeira-card">
+                    <div class="bandeira-icon-circle">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3>Humanização</h3>
+                    <p>Por trás de cada fila existe uma pessoa. Por trás de cada paciente existe uma família que merece respeito e agilidade.</p>
+                </div>
+
+                <!-- 6 -->
+                <div class="bandeira-card">
+                    <div class="bandeira-icon-circle">
+                        <i class="fa-solid fa-hospital-user"></i>
+                    </div>
+                    <h3>Fortalecimento do SUS</h3>
+                    <p>Defender com firmeza uma saúde pública forte, eficiente e capaz de atender todas as pessoas com máxima dignidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. TRAJETÓRIA / AUTORIDADE
+         ========================================================================== -->
+    <section id="trajetoria" class="trajetoria-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Autoridade e Vivência</span>
+                <h2 class="section-title">Conheço a saúde por dentro</h2>
+                <p class="section-description">
+                    Uma caminhada sólida construída com trabalho técnico, dedicação médica e liderança no setor público.
+                </p>
+            </div>
+
+            <div class="trajetoria-grid">
+                <div>
+                    <ul class="trajetoria-list">
+                        <li class="trajetoria-item">
+                            <i class="fa-solid fa-user-doctor"></i>
+                            <span>Médico Atuante</span>
+                        </li>
+                        <li class="trajetoria-item">
+                            <i class="fa-solid fa-microscope"></i>
+                            <span>Cirurgião Geral, Vascular e Endovascular</span>
+                        </li>
+                        <li class="trajetoria-item">
+                            <i class="fa-solid fa-ship"></i>
+                            <span>Atuação no Interior e Comunidades Ribeirinhas</span>
+                        </li>
+                        <li class="trajetoria-item">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>Oficial Médico do Exército Brasileiro</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul class="trajetoria-list">
+                        <li class="trajetoria-item">
+                            <i class="fa-solid fa-building-user"></i>
+                            <span>Gestor Municipal de Saúde</span>
+                        </li>
+                        <li class="trajetoria-item">
+                            <i class="fa-solid fa-landmark-flag"></i>
+                            <span>Gestor Estadual de Saúde</span>
+                        </li>
+                        <li class="trajetoria-item">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>Professor e Formador de Novos Médicos</span>
+                        </li>
+                        <li class="trajetoria-item">
+                            <i class="fa-solid fa-award"></i>
+                            <span>Liderança Institucional na Área da Saúde</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <p style="text-align: center; font-size: 1.1rem; color: var(--text-muted); margin-top: 35px; max-width: 850px; margin-left: auto; margin-right: auto;">
+                Essa experiência permitiu conhecer a realidade de quem precisa de atendimento, de quem trabalha diariamente na saúde e de quem precisa administrar uma estrutura pública complexa.
+            </p>
+
+            <!-- FRASE DE DESTAQUE 2 -->
+            <div class="highlight-quote">
+                <p>"Experiência não é privilégio. É responsabilidade."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. RESULTADOS / LEGADO
+         ========================================================================== -->
+    <section id="resultados" class="resultados-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Realizações</span>
+                <h2 class="section-title">Experiência que já produziu resultados</h2>
+                <p class="section-description">
+                    Ao longo da gestão pública, participação direta na implantação, ampliação e fortalecimento de importantes serviços de saúde em Rondônia.
+                </p>
+            </div>
+
+            <div class="resultados-grid">
+                <!-- 1 -->
+                <div class="resultado-card">
+                    <span class="resultado-tag">Porto Velho</span>
+                    <h3>Atenção Básica</h3>
+                    <p>Participação ativa na implantação e no fortalecimento da Estratégia Saúde da Família.</p>
+                </div>
+
+                <!-- 2 -->
+                <div class="resultado-card">
+                    <span class="resultado-tag">Atendimento Especializado</span>
+                    <h3>Policlínica Osvaldo Cruz</h3>
+                    <p>Atuação decisiva na estruturação e fortalecimento do atendimento médico especializado.</p>
+                </div>
+
+                <!-- 3 -->
+                <div class="resultado-card">
+                    <span class="resultado-tag">Urgência Cardiovascular</span>
+                    <h3>Hemodinâmica 24 Horas</h3>
+                    <p>Participação na implantação do serviço 24h para ampliar respostas em situações cardíacas críticas.</p>
+                </div>
+
+                <!-- 4 -->
+                <div class="resultado-card">
+                    <span class="resultado-tag">Pioneirismo em Rondônia</span>
+                    <h3>Transplantes no Estado</h3>
+                    <p>Atuação pioneira no início dos procedimentos de transplantes renais e de córnea no Estado.</p>
+                </div>
+
+                <!-- 5 -->
+                <div class="resultado-card">
+                    <span class="resultado-tag">Educação e Saúde</span>
+                    <h3>Formação de Especialistas</h3>
+                    <p>Contribuição direta para a expansão das residências médicas e formação de novos profissionais em Rondônia.</p>
+                </div>
+
+                <!-- 6 -->
+                <div class="resultado-card">
+                    <span class="resultado-tag">Interior do Estado</span>
+                    <h3>Assistência Ribeirinha</h3>
+                    <p>Atendimento direto em comunidades isoladas e defesa contínua da regionalização dos serviços.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. HUMANIZAÇÃO
+         ========================================================================== -->
+    <section class="humanizacao-section section-padding">
+        <div class="container">
+            <div class="humanizacao-container">
+                <div class="humanizacao-grid">
+                    <div class="humanizacao-badge-box">
+                        <i class="fa-solid fa-users-between-lines"></i>
+                        <h4>Raízes, Família e Fé</h4>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">
+                            "Rondônia se tornou minha casa. Foi aqui que construí minha carreira, minha família e grande parte da minha história."
+                        </p>
+                    </div>
+
+                    <div class="humanizacao-text">
+                        <span class="section-subtitle">Origem e Valores</span>
+                        <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 16px;">Antes dos cargos, existe uma história</h2>
+                        
+                        <p>
+                            Nasci em Votuporanga, no interior de São Paulo, mas foi no interior do Mato Grosso que construí minhas primeiras memórias. Sou filho de professora e comerciante. Trabalhei desde cedo com minha família, fui atleta, servi ao Exército e encontrei na medicina minha verdadeira vocação.
+                        </p>
+                        <p>
+                            Rondônia se tornou minha casa. Foi aqui que construí minha carreira, minha família e minha história. Sou casado com Cristiane e pai de três filhos.
+                        </p>
+                        <p>
+                            A família, a fé, o trabalho, a disciplina e o respeito pelas pessoas são valores fundamentais que carrego comigo em tudo o que faço.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FRASE DE DESTAQUE 3 -->
+            <div class="highlight-quote" style="border-left-color: var(--accent-green);">
+                <p>"Cuidar das pessoas sempre foi minha missão."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. POR QUE DEPUTADO ESTADUAL?
+         ========================================================================== -->
+    <section class="porque-section section-padding">
+        <div class="container">
+            <div class="porque-box">
+                <div class="section-header" style="text-align: left; margin-bottom: 30px;">
+                    <span class="section-subtitle">Motivação Política</span>
+                    <h2 class="section-title">Por que entrar para a política?</h2>
+                </div>
+
+                <div class="porque-grid">
+                    <div class="porque-col">
+                        <h3>A Transição para a Assembleia</h3>
+                        <p>
+                            Durante muitos anos, cuidei das pessoas como médico, de forma individualizada no consultório e no centro cirúrgico.
+                        </p>
+                        <p>
+                            Depois, como gestor público, aprendi que uma decisão bem tomada no planejamento tem o poder de melhorar o atendimento de milhares de pessoas ao mesmo tempo.
+                        </p>
+                    </div>
+
+                    <div class="porque-col">
+                        <h3>Instrumento de Transformação</h3>
+                        <p>
+                            Agora quero dar um novo passo. Na Assembleia Legislativa, um deputado estadual tem o dever de fiscalizar o Poder Executivo, propor leis eficientes, acompanhar o destino do orçamento público e direcionar emendas com responsabilidade.
+                        </p>
+                        <p>
+                            Quero usar esses instrumentos com conhecimento técnico e seriedade para ajudar Rondônia a avançar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         9. CHAMADA ELEITORAL
+         ========================================================================== -->
+    <section class="cta-section section-padding">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Rondônia pode cuidar melhor das pessoas.</h2>
+                
+                <ul class="cta-list">
+                    <li><i class="fa-solid fa-circle-check"></i> Transformar experiência técnica em responsabilidade pública.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Fiscalizar a saúde com conhecimento e independência.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Valorizar os profissionais que estão na ponta do atendimento.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Garantir que os recursos cheguem exatamente onde são necessários.</li>
+                </ul>
+
+                <div class="cta-number-card">
+                    <div class="candidate-name">Dr. Maiorquin</div>
+                    <div style="font-size: 0.9rem; font-weight: 700; text-transform: uppercase;">Deputado Estadual</div>
+                    <div class="candidate-num">10555</div>
+                    <div class="candidate-slogan">"Quem entende de saúde, cuida de pessoas."</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         10. REDES SOCIAIS / ACOMPANHE
+         ========================================================================== -->
+    <section id="contato" class="social-section">
+        <div class="container">
+            <span class="section-subtitle">Engajamento</span>
+            <h2 class="section-title">Acompanhe essa caminhada</h2>
+            <p class="section-description">
+                Veja de perto a agenda, os encontros, os posicionamentos, as propostas e os próximos passos da nossa campanha pelas redes sociais.
+            </p>
+
+            <div class="social-links-wrapper">
+                <a href="https://www.instagram.com/drluismaiorquin/" target="_blank" class="social-btn instagram">
+                    <i class="fa-brands fa-instagram" style="font-size: 1.4rem;"></i> Siga no Instagram
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61590349412610" target="_blank" class="social-btn facebook">
+                    <i class="fa-brands fa-facebook-f" style="font-size: 1.4rem;"></i> Curta no Facebook
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         11. RODAPÉ (FOOTER OFICIAL)
+         ========================================================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Coluna 1: Identificação -->
+                <div class="footer-brand">
+                    <h3>DR. MAIORQUIN 10555</h3>
+                    <p>Deputado Estadual • Rondônia</p>
+                    <p style="font-style: italic; color: var(--accent-yellow);">"Quem entende de saúde, cuida de pessoas."</p>
+                    <div style="margin-top: 15px;">
+                        <img src="republicanos.jpg" alt="Logo Republicanos" class="party-logo-footer">
+                    </div>
+                </div>
+
+                <!-- Coluna 2: Navegação -->
+                <div class="footer-links">
+                    <h4>Navegação</h4>
+                    <ul class="footer-nav">
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#apresentacao">Quem é Maiorquin</a></li>
+                        <li><a href="#bandeiras">Bandeiras</a></li>
+                        <li><a href="#trajetoria">Trajetória</a></li>
+                        <li><a href="#resultados">Resultados</a></li>
+                        <li><a href="#contato">Redes Sociais</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Dados Legais da Campanha -->
+                <div class="footer-legal">
+                    <h4>Informações Legais</h4>
+                    <p style="font-size: 0.85rem; color: rgba(255,255,255,0.7);">
+                        Eleições 2026 - Propaganda Eleitoral da Candidatura a Deputado Estadual.
+                    </p>
+                    
+                    <div class="cnpj-box">
+                        <strong>CNPJ do Candidato:</strong>
+                        <div class="cnpj-number">68.519.554/0001-33</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Direitos e Transparência Eleitoral -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Campanha Dr. Maiorquin Deputado Estadual - 10555. Todos os direitos reservados. Desenvolvido de acordo com as normas da Justiça Eleitoral (TSE).</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script simples para suporte a menu mobile -->
+    <script>
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'flex';
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '100%';
+                navLinks.style.left = '0';
+                navLinks.style.width = '100%';
+                navLinks.style.backgroundColor = '#ffffff';
+                navLinks.style.padding = '20px';
+                navLinks.style.boxShadow = '0 10px 20px rgba(0,0,0,0.1)';
+            }
+        });
+    </script>
+</body>
+</html>
+
+<!-- ### Destaques da Implementação:
+
+1. **Atendimento Estrito à Legislação Eleitoral (TSE):**
+   - **CNPJ da Campanha (`68.519.554/0001-33`)** em local destacado tanto na barra superior de avisos legais quanto no rodapé oficial.
+   - **Identificação Clara:** Nome do candidato (**Dr. Maiorquin**), Cargo (**Deputado Estadual**), Número (**10555**) e Partido (**Republicanos** com a inclusão da logo oficial no rodapé).
+
+2. **Identidade Visual e Pantone da Campanha:**
+   - Paleta focada em **Azul Prússia/Saúde (`#0254A5`)**, **Verde Esperança/SUS (`#009845`)** e **Amarelo Destaque (`#FBB800`)**, mantendo fundos claros, limpos e sem poluição visual.
+
+3. **Inclusão Estratégica das Mídias Fornecidas:**
+   - **Banner Principal / Head:** `head.jpg` integrado na primeira dobra.
+   - **Arte Circular:** `arte circular.jpg` no card de apoio do Hero e na seção de apresentação.
+   - **Logos Oficiais:** Utilizadas no header (`LOGO-DR.-MAIORQUIN-10555---HORIZONTAL-v.-branca.png`) e no footer (`republicanos.jpg`), além do badge eleitoral.
+
+4. **Navegação Inteligente & Seções Estruturadas:**
+   - Página única com rolagem suave contendo todas as 11 seções organizadas (Apresentação, Posicionamento com Frases de Destaque, Bandeiras em Cards, Trajetória em Lista de Competências, Resultados/Legado, Humanização, Chamada Eleitoral, Redes Sociais com links oficiais e Footer Completo). -->
