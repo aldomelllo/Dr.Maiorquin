@@ -698,23 +698,17 @@
         }
 
         .humanizacao-badge-box {
-            background-color: var(--primary-blue-light);
-            padding: 30px;
+            overflow: hidden;
             border-radius: var(--border-radius);
-            text-align: center;
-            border: 2px dashed var(--primary-blue);
+            box-shadow: var(--shadow-md);
         }
 
-        .humanizacao-badge-box i {
-            font-size: 3rem;
-            color: var(--primary-blue);
-            margin-bottom: 16px;
-        }
-
-        .humanizacao-badge-box h4 {
-            font-size: 1.3rem;
-            color: var(--primary-blue-dark);
-            margin-bottom: 8px;
+        .humanizacao-badge-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: var(--border-radius);
+            object-fit: cover;
         }
 
         .humanizacao-text p {
@@ -757,31 +751,57 @@
         }
 
         /* ==========================================================================
-           13. SEÇÃO 9: CHAMADA ELEITORAL & REDES SOCIAIS
+           13. SEÇÃO 9: CHAMADA ELEITORAL (OPÇÃO 1: ANCORADA NA BASE)
            ========================================================================== */
         .cta-section {
             background: linear-gradient(135deg, var(--primary-blue-dark) 0%, var(--primary-blue) 100%);
             color: #FFFFFF;
-            text-align: center;
-            padding: 80px 0;
+            padding: 80px 0 0 0;
             position: relative;
+            overflow: hidden;
+        }
+
+        .cta-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 40px;
+            align-items: flex-end;
+        }
+
+        .cta-img-box {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            line-height: 0;
+        }
+
+        .cta-img {
+            max-width: 100%;
+            height: auto;
+            max-height: 560px;
+            object-fit: contain;
+            display: block;
+            filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
         }
 
         .cta-content {
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 100%;
+            text-align: left;
+            padding-bottom: 70px;
         }
 
         .cta-title {
             font-size: 2.5rem;
             color: #FFFFFF;
             margin-bottom: 20px;
+            text-align: left;
         }
 
         .cta-list {
             list-style: none;
-            margin: 30px auto;
-            max-width: 600px;
+            margin: 25px 0;
+            max-width: 100%;
             text-align: left;
             display: flex;
             flex-direction: column;
@@ -810,6 +830,7 @@
             display: inline-block;
             margin-top: 20px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            text-align: center;
         }
 
         .cta-number-card .candidate-name {
@@ -974,6 +995,7 @@
             .trajetoria-grid,
             .humanizacao-grid,
             .porque-grid,
+            .cta-grid,
             .footer-grid {
                 grid-template-columns: 1fr;
             }
@@ -988,8 +1010,12 @@
                 font-size: 2.4rem;
             }
 
+            .cta-content {
+                padding-bottom: 40px;
+            }
+
             .nav-links {
-                display: none; /* Poderia virar menu hambúrguer */
+                display: none;
             }
 
             .mobile-menu-btn {
@@ -1018,6 +1044,10 @@
 
             .humanizacao-container, .porque-box {
                 padding: 24px;
+            }
+
+            .cta-title {
+                font-size: 1.8rem;
             }
         }
     </style>
@@ -1060,8 +1090,6 @@
                 </ul>
             </nav>
 
-          
-
             <button class="mobile-menu-btn" aria-label="Abrir Menu">
                 <i class="fa-solid fa-bars"></i>
             </button>
@@ -1076,7 +1104,7 @@
             
             <!-- Banner Head Oficial Integrado -->
             <div class="hero-banner-wrapper">
-                <img src="head.png" alt="Campanha Dr. Maiorquin 10555 - Quem entende de saúde, cuida de pessoas" class="hero-banner-img">
+                <img src="head.jpg" alt="Campanha Dr. Maiorquin 10555 - Quem entende de saúde, cuida de pessoas" class="hero-banner-img">
             </div>
 
             <div class="hero-grid">
@@ -1396,11 +1424,7 @@
             <div class="humanizacao-container">
                 <div class="humanizacao-grid">
                     <div class="humanizacao-badge-box">
-                        <i class="fa-solid fa-users-between-lines"></i>
-                        <h4>Raízes, Família e Fé</h4>
-                        <p style="color: var(--text-muted); font-size: 0.95rem;">
-                            "Rondônia se tornou minha casa. Foi aqui que construí minha carreira, minha família e grande parte da minha história."
-                        </p>
+                        <img src="familia.jpg" alt="Dr. Maiorquin e Família">
                     </div>
 
                     <div class="humanizacao-text">
@@ -1464,25 +1488,31 @@
     </section>
 
     <!-- ==========================================================================
-         9. CHAMADA ELEITORAL
+         9. CHAMADA ELEITORAL (OPÇÃO 1: ANCORADA NA BASE)
          ========================================================================== -->
     <section class="cta-section section-padding">
         <div class="container">
-            <div class="cta-content">
-                <h2 class="cta-title">Rondônia pode cuidar melhor das pessoas.</h2>
-                
-                <ul class="cta-list">
-                    <li><i class="fa-solid fa-circle-check"></i> Transformar experiência técnica em responsabilidade pública.</li>
-                    <li><i class="fa-solid fa-circle-check"></i> Fiscalizar a saúde com conhecimento e independência.</li>
-                    <li><i class="fa-solid fa-circle-check"></i> Valorizar os profissionais que estão na ponta do atendimento.</li>
-                    <li><i class="fa-solid fa-circle-check"></i> Garantir que os recursos cheguem exatamente onde são necessários.</li>
-                </ul>
+            <div class="cta-grid">
+                <div class="cta-img-box">
+                    <img src="maio.png" alt="Dr. Maiorquin" class="cta-img">
+                </div>
 
-                <div class="cta-number-card">
-                    <div class="candidate-name">Dr. Maiorquin</div>
-                    <div style="font-size: 0.9rem; font-weight: 700; text-transform: uppercase;">Deputado Estadual</div>
-                    <div class="candidate-num">10555</div>
-                    <div class="candidate-slogan">"Quem entende de saúde, cuida de pessoas."</div>
+                <div class="cta-content">
+                    <h2 class="cta-title">Rondônia pode cuidar melhor das pessoas.</h2>
+                    
+                    <ul class="cta-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Transformar experiência técnica em responsabilidade pública.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Fiscalizar a saúde com conhecimento e independência.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Valorizar os profissionais que estão na ponta do atendimento.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Garantir que os recursos cheguem exatamente onde são necessários.</li>
+                    </ul>
+
+                    <div class="cta-number-card">
+                        <div class="candidate-name">Dr. Maiorquin</div>
+                        <div style="font-size: 0.9rem; font-weight: 700; text-transform: uppercase;">Deputado Estadual</div>
+                        <div class="candidate-num">10555</div>
+                        <div class="candidate-slogan">"Quem entende de saúde, cuida de pessoas."</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1581,20 +1611,3 @@
     </script>
 </body>
 </html>
-
-<!-- ### Destaques da Implementação:
-
-1. **Atendimento Estrito à Legislação Eleitoral (TSE):**
-   - **CNPJ da Campanha (`68.519.554/0001-33`)** em local destacado tanto na barra superior de avisos legais quanto no rodapé oficial.
-   - **Identificação Clara:** Nome do candidato (**Dr. Maiorquin**), Cargo (**Deputado Estadual**), Número (**10555**) e Partido (**Republicanos** com a inclusão da logo oficial no rodapé).
-
-2. **Identidade Visual e Pantone da Campanha:**
-   - Paleta focada em **Azul Prússia/Saúde (`#0254A5`)**, **Verde Esperança/SUS (`#009845`)** e **Amarelo Destaque (`#FBB800`)**, mantendo fundos claros, limpos e sem poluição visual.
-
-3. **Inclusão Estratégica das Mídias Fornecidas:**
-   - **Banner Principal / Head:** `head.jpg` integrado na primeira dobra.
-   - **Arte Circular:** `arte circular.jpg` no card de apoio do Hero e na seção de apresentação.
-   - **Logos Oficiais:** Utilizadas no header (`LOGO-DR.-MAIORQUIN-10555---HORIZONTAL-v.-branca.png`) e no footer (`republicanos.jpg`), além do badge eleitoral.
-
-4. **Navegação Inteligente & Seções Estruturadas:**
-   - Página única com rolagem suave contendo todas as 11 seções organizadas (Apresentação, Posicionamento com Frases de Destaque, Bandeiras em Cards, Trajetória em Lista de Competências, Resultados/Legado, Humanização, Chamada Eleitoral, Redes Sociais com links oficiais e Footer Completo). -->
